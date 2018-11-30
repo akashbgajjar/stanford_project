@@ -6,6 +6,8 @@ library(ggplot2)
 
 source("data.R")
 
+source("models.R")
+
 shinyServer(function(input, output) {
   
   output$airPlot <- reactivePlot(function() {
